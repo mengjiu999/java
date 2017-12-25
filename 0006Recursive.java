@@ -5,9 +5,10 @@ public class Recursive{
     }
 //只有执行方法才占内存
     public static int method(int n){
-        if(n == 1)
+        if(n == 1){
             return 1;
-        else
+        }else{
             return n*method(n-1);
+        }
     }
 }
